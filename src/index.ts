@@ -9,4 +9,8 @@ const _griddie: StylisPlugin = function griddie(context, content) {
   }
 }
 
+if (Object.getOwnPropertyDescriptor(_griddie, 'name')?.configurable) {
+  Object.defineProperty(_griddie, 'name', { value: 'griddie' })
+}
+
 export default _griddie
