@@ -109,9 +109,7 @@ var parseGridProperties = function parseGridProperties(property) {
   return property;
 };
 
-var _Object$getOwnPropert;
-
-var griddie = function griddie(context, content) {
+var _griddie = function griddie(context, content) {
   if (context === 1 || context === 2) {
     return Array.isArray(content) ? content.forEach(function (item) {
       return parseGridProperties(item);
@@ -119,11 +117,5 @@ var griddie = function griddie(context, content) {
   }
 };
 
-if ((_Object$getOwnPropert = /*#__PURE__*/Object.getOwnPropertyDescriptor(griddie, 'name')) === null || _Object$getOwnPropert === void 0 ? void 0 : _Object$getOwnPropert.configurable) {
-  Object.defineProperty(griddie, 'name', {
-    value: 'griddie'
-  });
-}
-
-exports.default = griddie;
+exports.default = _griddie;
 //# sourceMappingURL=styled-griddie.cjs.development.js.map
