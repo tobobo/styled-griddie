@@ -105,6 +105,8 @@ var parseGridProperties = function parseGridProperties(property) {
   return property;
 };
 
+var _Object$getOwnPropert;
+
 var _griddie = function griddie(context, content) {
   if (context === 1 || context === 2) {
     return Array.isArray(content) ? content.forEach(function (item) {
@@ -112,6 +114,12 @@ var _griddie = function griddie(context, content) {
     }) : parseGridProperties(content);
   }
 };
+
+if ((_Object$getOwnPropert = /*#__PURE__*/Object.getOwnPropertyDescriptor(_griddie, 'name')) === null || _Object$getOwnPropert === void 0 ? void 0 : _Object$getOwnPropert.configurable) {
+  Object.defineProperty(_griddie, 'name', {
+    value: 'griddie'
+  });
+}
 
 export default _griddie;
 //# sourceMappingURL=styled-griddie.esm.js.map
